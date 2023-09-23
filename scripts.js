@@ -1,7 +1,7 @@
 /****************** Exercise 1 ********************/
 
 // List five examples of websites using loops. 
-  
+"count down"
 
 
 
@@ -11,6 +11,12 @@
 /****************** Exercise 2 ********************/
 
 // Use a while loop to log to the console the numbers from 1 to 10
+let input = 1
+
+while (input <= 10) {
+console.log(input);
+input++;
+};
 
 
 
@@ -22,7 +28,15 @@
 
 // Use a while loop to calculate the sum of even numbers from 2 to 20
 
+let number = 2; 
+let sum = 0;
 
+while (number <= 20) {
+sum += number;
+number += 2; 
+}
+
+console.log(`The sum of even numbers from 2 to 20 is: ${sum}`);
 
 
 
@@ -33,7 +47,10 @@
 // Implement a countdown using a while loop
 let countdown = 10;
 
-
+while (countdown >= 1) {
+    console.log(countdown);
+    countdown--
+}
 
 
 
@@ -44,19 +61,23 @@ let countdown = 10;
 /****************** Exercise 5 ********************/
 
 // Review This Code
-const secretNumber = Math.floor(Math.random() * 100) + 1; 
-let guess;
-let attempts = 0;
+// const secretNumber = Math.floor(Math.random() * 100) + 1; 
+// let guess;
+// let attempts = 0;
 
-while (guess !== secretNumber) {
-    guess = parseInt(prompt("Guess a number between 1 and 100:"));
+// while (guess !== secretNumber) {
+//     guess = parseInt(prompt("Guess a number between 1 and 100:"));
 
-    if (isNaN(guess)) {
-        console.log("Please enter a valid number.");
-    } else {
-        attempts++;
-    }
-}
+//     if (isNaN(guess)) {
+//         console.log("Please enter a valid number.");
+//     } else if (guess > secretNumber) {
+//         console.log("Too high!");
+//         attempts++
+//     } else {
+//         attempts++;
+//         console.log(`Congratulations! You guessed the number ${secretNumber} in ${attempts}`)
+//     }
+// }
 
 
 // Refactor the code so that:
@@ -80,7 +101,7 @@ const itemPrice = 3;
 console.log("Welcome to the Vending Machine!");
 console.log(`You have $${userBalance} in your balance.`);
 
-while (//YOUR CODE HERE//) {
+while (userBalance >= itemPrice) {
     console.log("Available options:");
     console.log("1. Snack A ($3)");
     console.log("2. Snack B ($2)");
