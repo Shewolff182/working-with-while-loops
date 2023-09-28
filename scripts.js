@@ -1,7 +1,12 @@
 /****************** Exercise 1 ********************/
 
 // List five examples of websites using loops. 
-"count down"
+//1. a count down
+//2. news websites
+//3. Ecommerce
+//4. social media
+//5. surveys
+
 
 
 
